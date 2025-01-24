@@ -1,16 +1,30 @@
 import styled from "styled-components";
 import React from "react";
 import {theme} from "../../styles/Theme";
+import {Link} from "react-scroll";
 
-export const Menu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
+const items = [
+    {   title: "home",
+        href: "home"
+    },
+    {   title: "works",
+        href: "works"
+    },
+    {   title: "about-me",
+        href: "about-me"
+    },
+    {   title: "contacts",
+        href: "contacts"
+    }]
+export const Menu: React.FC = () => {
     return (
         <DesktopMenu>
             <ul>
-                {props.menuItems.map((items, index) => {
+                {items.map((item, index) => {
                     return <StyledMenuItem key={index}>
                         <StyledLink href="">
                             <span>#</span>
-                            <Link href="/{items}">{items}</Link>
+                            <NavLink to={item.href} smooth={true}>{item.title}</NavLink>
                         </StyledLink>
                     </StyledMenuItem>
                 })}
@@ -48,4 +62,4 @@ const SelectLang = styled.select`
     color: ${theme.colors.font};
     border: none;
 `
-const Link = styled.a``
+const NavLink = styled(Link)``

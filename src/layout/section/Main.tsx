@@ -5,11 +5,12 @@ import {Container} from "../../components/Container";
 import mainPhoto from "../../assets/img/imgMain.png"
 import dots from "../../assets/img/Dots.svg"
 import lines from "../../assets/img/Lines.svg"
+import cub from "../../assets/img/Rectangle 27.svg"
 import {theme} from "../../styles/Theme";
 
 export const Main: React.FC = () => {
     return (
-        <StyledMain>
+        <StyledMain id="home">
             <Container>
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <div>
@@ -20,6 +21,10 @@ export const Main: React.FC = () => {
                     <PhotoHolder>
                         <Dots src={dots} alt="Dots"/>
                         <Lines src={lines} alt="Line Line"/>
+                        <ImageBox>
+                            <img src={cub} alt="square"/>
+                            <p>Currently working on <b>Portfolio</b></p>
+                        </ImageBox>
                     </PhotoHolder>
                 </FlexWrapper>
             </Container>
@@ -35,9 +40,7 @@ const StyledMain = styled.section`
     strong {
         color: ${theme.colors.accent};
     }
-    button {
-        padding: 6px 18px;
-    }
+   
     @media screen and (max-width: 928px) {
         ${FlexWrapper} {
             justify-content: center;
@@ -87,3 +90,19 @@ const Lines = styled.img`
     }
 `
 
+const ImageBox = styled.div`
+    padding: 8px;
+    width: 350px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border: 1px solid ${theme.colors.borderColor};
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    p {
+        padding: 8px; 
+    }
+    
+`

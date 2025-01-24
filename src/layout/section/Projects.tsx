@@ -8,16 +8,15 @@ import {Container} from "../../components/Container";
 import {theme} from "../../styles/Theme";
 import {LinkButton} from "../../components/LinkButton";
 
-
 export const Projects = () => {
     return (
-        <StyledProjects>
+        <StyledProjects id="works">
             <Container>
                 <SectionTitle>
                     <h2><span>#</span>projects</h2>
                     <Link href="/projects">View all ~~&gt;</Link>
                 </SectionTitle>
-                <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"}>
+                <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"} gap={"8px"}>
                     <Project>
                         <ProjectImg src={projectChertNodes} alt="progectChertNodes" />
                         <ProgramUse>
@@ -31,7 +30,7 @@ export const Projects = () => {
                         <ProjectDescription>
                             <h3>ChertNodes</h3>
                             <p>Minecraft servers hosting </p>
-                            <LinkButton>Live &lt;~&gt;</LinkButton>
+                            <LinkButton active={true}>Live &lt;~&gt;</LinkButton>
                             <LinkButton>Cached &gt;=</LinkButton>
                         </ProjectDescription>
 
@@ -53,7 +52,7 @@ export const Projects = () => {
                         <ProjectDescription>
                             <h3>ProtectX</h3>
                             <p>Discord anti-crash bot</p>
-                            <LinkButton>Live &lt;~&gt;</LinkButton>
+                            <LinkButton active={true}>Live &lt;~&gt;</LinkButton>
                         </ProjectDescription>
                     </Project>
                     <Project>
@@ -68,7 +67,7 @@ export const Projects = () => {
                         <ProjectDescription>
                             <h3>Kahoot Answers Viewer</h3>
                             <p>Get answers to your kahoot quiz</p>
-                            <LinkButton>Live &lt;~&gt;</LinkButton>
+                            <LinkButton active={true}>Live &lt;~&gt;</LinkButton>
                         </ProjectDescription>
 
                     </Project>
@@ -94,14 +93,20 @@ const SectionTitle = styled.div`
         content: "";
         position: absolute;
         height: 2px;
-        width: 40vw;
+        width: 25vw;
         background-color: ${theme.colors.accent};
+        top: 50%;
+        left: 185px;
     }
 `
-const Project = styled.div`
-    border:2px solid ${theme.colors.borderColor};
+const Project = styled.article`
+    border: 2px solid ${theme.colors.borderColor};
     max-width: 330px;
     width: 100%;
+    margin-top: 15px;
+    @media ${theme.media.tablet} {
+        min-width: 200px;
+    }
 `
 const ProjectImg = styled.img`
     max-width: 100%;
@@ -109,12 +114,11 @@ const ProjectImg = styled.img`
 `
 
 const ProgramUse = styled.div`
-   
+    padding: 8px;
    ul {
        display: flex;
        justify-content: flex-start;
        gap: 8px;
-       padding: 8px;
        flex-wrap: wrap;
    }
     
@@ -122,8 +126,12 @@ const ProgramUse = styled.div`
 const ProjectDescription = styled.div`
     border:2px solid ${theme.colors.borderColor};
     padding: 16px 16px;
+    p {
+        margin: 16px 0;
+    }
+    
     ${LinkButton} {
-        margin-left: 16px;
+        margin-right: 16px;
     }
     
 `

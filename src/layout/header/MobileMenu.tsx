@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {Icon} from "../../components/Icon";
 import {S} from "./HeaderMenu_Styles"
-
-export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
+const items = ["home", "works", "about-me", "contacts"]
+export const MobileMenu: React.FC = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const onBurgerBtnClick = () => {setMenuIsOpen(!menuIsOpen)};
     return (
@@ -12,7 +12,7 @@ export const MobileMenu: React.FC<{menuItems: Array<string>}> = (props: {menuIte
             </S.BurgerButton>
             <S.MobileMenuPopup isOpen={menuIsOpen} onClick={() => {setMenuIsOpen(false)}}>
                 <ul>
-                    {props.menuItems.map((items, index) => {
+                    {items.map((items, index) => {
                         return <S.MenuItem key={index}>
                             <S.Link href="">
                                 <span>#</span>

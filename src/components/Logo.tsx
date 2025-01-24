@@ -7,10 +7,11 @@ import {theme} from "../styles/Theme";
 export const Logo: React.FC = () => {
     return (
         <HolderLogo>
-            <a href="#" >
+            <a href="#">
                 <Icon width={'16px'} height={"17px"} viewBox={"0 0 16 17"} iconId={'logo'}/>
+                <span>&nbsp;Elias</span>
             </a>
-            <span>&nbsp;Elias</span>
+
         </HolderLogo>
     );
 }

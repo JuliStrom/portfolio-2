@@ -9,8 +9,14 @@ export const LinkButton = styled.a<{active?: boolean}>`
     border: 2px solid ${theme.colors.borderColor};
     color: ${theme.colors.font};
     cursor: pointer;
-    position: relative;
-    z-index: 0;
+    
+    &:hover {
+        border: 3px solid ${theme.colors.accent};
+    }
+    &:active {
+        background-color: rgba(199, 120, 221, 0.2);;
+    }
+    
 
     ${props => props.active && css<{active?: boolean}>`
         border: 2px solid ${theme.colors.accent};

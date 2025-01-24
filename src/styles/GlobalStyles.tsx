@@ -32,7 +32,9 @@ section {
     width: 100%;
     background-color: ${theme.colors.primaryBg};
     margin: 0 auto;
-    padding: 62px 0;
+    padding: 62px 2px;
+    position: relative;
+    
 }
 button {
     background: none;
@@ -40,6 +42,13 @@ button {
     color: ${theme.colors.font};
     cursor: pointer;
     letter-spacing: 2px;
+    padding: 6px 18px;
+    &:hover {
+        border: 3px solid ${theme.colors.accent};
+    }
+    &:active {
+        background-color: rgba(199, 120, 221, 0.2);;
+    }
 }
 h2 {
     ${font({family: "'Fira Code', sans-serif", weight: 600, Fmax: 32, Fmin: 26})};
@@ -49,13 +58,14 @@ h2 {
 }
 
 h3 {
-    ${font({family: "'Fira Code', sans-serif", weight: 500, Fmax: 24, Fmin: 18})};
+    ${font({family: "'Fira Code', sans-serif", weight: 500, Fmax: 24, Fmin: 20})};
 }
 h4 {
     ${font({family: "'Fira Code', sans-serif", weight: 400, Fmax: 24, Fmin: 20})};
 }
 h5 {
-    ${font({family: "'Fira Code', sans-serif", weight: 600, Fmax: 24, Fmin: 20})};
+    ${font({family: "'Fira Code', sans-serif", weight: 600, Fmax: 16, Fmin: 12})};
+    
 }
  p {
      font-weight: 400;
