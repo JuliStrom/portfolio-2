@@ -1,24 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio-2/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio-2/static/js/main.c5f999b8.js",
+    "main.js": "/portfolio-2/static/js/main.ad6b420a.js",
     "static/js/787.25eaef86.chunk.js": "/portfolio-2/static/js/787.25eaef86.chunk.js",
     "static/media/imgMain.png": "/portfolio-2/static/media/imgMain.be0928130e5feab99348.png",
     "static/media/man.png": "/portfolio-2/static/media/man.94a11c4b6fe48b315ac8.png",
     "static/media/icons-sprite.svg": "/portfolio-2/static/media/icons-sprite.217a5d5770332fd8ad44cf5c56175dfa.svg",
+    "static/media/skillGroup.svg": "/portfolio-2/static/media/skillGroup.48db0deeea61fa7536624221b3fecbfb.svg",
     "static/media/Lines.svg": "/portfolio-2/static/media/Lines.4083d26198cd0dee0a2e1a5adfe601de.svg",
-    "static/media/DotsSkill.svg": "/portfolio-2/static/media/DotsSkill.712e4ca731fd973ed289041f934a3877.svg",
     "static/media/Dots.svg": "/portfolio-2/static/media/Dots.6e33fd923b2a31d9872d96e676985fdd.svg",
     "index.html": "/portfolio-2/index.html",
     "static/media/“.svg": "/portfolio-2/static/media/“.7a3b9b140644b0def8ab2e05713e7b88.svg",
-    "static/media/Rectangle52.svg": "/portfolio-2/static/media/Rectangle52.93f1655010230ea8dbb8286d27eb67ed.svg",
-    "static/media/Rectangle86.svg": "/portfolio-2/static/media/Rectangle86.5ded3b65d7f216c31b67008e185503f3.svg",
+    "static/media/Rectangle 27.svg": "/portfolio-2/static/media/Rectangle 27.8af3792ba1f4764dd1b0cfacb75f20f6.svg",
     "main.e6c13ad2.css.map": "/portfolio-2/static/css/main.e6c13ad2.css.map",
-    "main.c5f999b8.js.map": "/portfolio-2/static/js/main.c5f999b8.js.map",
+    "main.ad6b420a.js.map": "/portfolio-2/static/js/main.ad6b420a.js.map",
     "787.25eaef86.chunk.js.map": "/portfolio-2/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.c5f999b8.js"
+    "static/js/main.ad6b420a.js"
   ]
 }
